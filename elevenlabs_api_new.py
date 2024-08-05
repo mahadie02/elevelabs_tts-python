@@ -1,9 +1,6 @@
 import requests
-#from elevenlabs import save
 import voice_list as vl
 import split_text as st
-
-tts_url = f"https://api.elevenlabs.io/v1/text-to-speech/{vl.voice_id[1]}/stream"
 
 
 def el_tts(file_path, selected_voice, api_key, stability, similarity_boost, style, character_limit, format, save_dir):
@@ -18,7 +15,8 @@ def el_tts(file_path, selected_voice, api_key, stability, similarity_boost, styl
 
     print("Generating Voice...")
     full_audio = bytes()
-
+    
+    tts_url = f"https://api.elevenlabs.io/v1/text-to-speech/{vl.voice_id[selected_voice]}/stream"
     headers = {
         "Accept": "application/json",
         "xi-api-key": api_key,

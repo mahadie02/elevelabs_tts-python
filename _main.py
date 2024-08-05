@@ -4,6 +4,7 @@ import elevenlabs_api_new as el
 api_key = 'YOUR_ELEVEN_LABS_API_KEY'
 
 file_path = "_script.txt"
+
 selected_voice = 4
 
 stability = 0.75
