@@ -1,8 +1,5 @@
-#import elevenlabs_api as el
-#import new_el as el
 import elevenlabs_api_new as el
 
-7
 #..........Parameters.........#
 api_key = 'YOUR_ELEVEN_LABS_API_KEY'
 
