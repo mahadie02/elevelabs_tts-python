@@ -27,7 +27,7 @@ def el_tts(file_path, selected_voice, api_key, stability, similarity_boost, char
         audio += elevenlabs.generate(
              text= text,
              voice= voice,
-             api_key= api_key
+             #api_key= api_key
         )
 
     print("Saving Audio...")
@@ -36,3 +36,4 @@ def el_tts(file_path, selected_voice, api_key, stability, similarity_boost, char
     elevenlabs.save(audio, f"{save_dir}/{vl.voice_name[selected_voice-1]} - {title}")
 
     print("Saved successfully!")
+    
