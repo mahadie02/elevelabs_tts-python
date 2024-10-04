@@ -3,7 +3,7 @@ import elevenlabs_api_call as el
 #..........Parameters.........#
 api_key = 'YOUR_API_KEY'
 
-file_path = "_script.txt"
+script_path = "_script.txt"
 
 selected_voice = 6
 
@@ -18,5 +18,5 @@ save_dir = 'voices'
 
 
 
-el.el_tts(file_path, selected_voice, api_key, stability, similarity_boost, style, character_limit, format, save_dir)
+el.el_tts(script_path, selected_voice, api_key, stability, similarity_boost, style, character_limit, format, save_dir)
 

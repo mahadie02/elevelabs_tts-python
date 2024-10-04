@@ -4,11 +4,11 @@ import _voice_list as vl
 import split_text as st
 
 
-def el_tts(file_path, selected_voice, api_key, stability, similarity_boost, style, character_limit, format, save_dir):
+def el_tts(script_path, selected_voice, api_key, stability, similarity_boost, style, character_limit, format, save_dir):
     
     #Read Text file 
     print("\nReading Script...")
-    title, splitted_texts = st.read_and_split_text(file_path, character_limit)
+    title, splitted_texts = st.read_and_split_text(script_path, character_limit)
     title += format 
 
     
