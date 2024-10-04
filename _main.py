@@ -1,13 +1,13 @@
-import elevenlabs_api_new as el
+import elevenlabs_api_call as el
 
 #..........Parameters.........#
-api_key = 'YOUR_ELEVEN_LABS_API_KEY'
+api_key = 'YOUR_API_KEY'
 
 file_path = "_script.txt"
 
-selected_voice = 4
+selected_voice = 6
 
-stability = 0.75
+stability = 0.5
 similarity_boost = 0.75
 style = 0.0
 
